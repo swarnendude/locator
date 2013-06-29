@@ -420,4 +420,92 @@ body,
 /*********************** Gallery Carousel ENDS *************************/
 
 
+/*********************** Info *************************/
+
+.details-info {
+				font-size: 13px;
+}
+
+
+.details-info .block{
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+				margin: 15px;
+}
+
+.details-info .block > div{
+				margin: 10px;
+}
+
+.details-info .block .name{
+				font-size: 14px;
+				font-weight: bold;
+				color: #333;
+				padding-top: 10px;
+}
+
+.details-info .block .address{
+				color: #444;
+}
+
+.details-info .block .actions{
+				width: 100%;
+				margin: 0;
+				border-top: 1px solid rgba(0,0,0,0.2);
+				display: -webkit-box;
+				height: 70px;
+}
+
+.details-info .block .actions > div{
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+				width: 33.33%;
+				border-right: 1px solid #aaa;
+}
+
+.details-info .block .actions .icon{
+				width: 32px;
+				height: 42px;
+				background: #00A1A5;
+				-webkit-mask-size: 32px;
+				-webkit-mask-position: 0px 10px;
+				-webkit-mask-repeat: no-repeat;
+				margin: 5px auto;
+}
+
+.details-info .block .actions .text{
+				text-align: center;
+				font-size: 12px;
+}
+
+.details-info .block .actions a{
+				text-decoration: none;
+				color: #444;
+				font-weight: bold;
+				font-size: 12px;
+}
+
+.details-info .block .actions .phone .icon{				
+				-webkit-mask-image: url(../images/phone.png);
+}
+
+.details-info .block .actions .website .icon{				
+				-webkit-mask-image: url(../images/website.png);
+}
+
+
+.details-info .block .actions .profile .icon{
+				-webkit-mask-image: url(../images/gplus.png);
+
+}
+
+.details-info .map{
+				height: 140px;
+}
+
+
+/*********************** Info ENDS *************************/
+
+
+
 /****************************** Details Panel ENDS *********************************/

@@ -50,7 +50,7 @@
 												}
 								</style>
 
-						
+
 				</head>
 				<body>
 								<div id="appLoadingIndicator">
@@ -59,7 +59,7 @@
 												<div></div>
 								</div>
 
-								<!-- Place Details Review Page -->
+								<!-- Place List Item -->
 								<script type="text/template" id="tpl_placelist_item">
 												{[this.getImage(values)]}
 												<div class="item" data-placelistitem-id="{id}">
@@ -68,6 +68,40 @@
 																{rating:this.getRating}
 												</div>
 								</script>
+
+								<!-- Place Details Info Page -->
+								<script type="text/template" id="tpl_place_details_info">
+												<div class="block content">
+																<div class="name">{name}</div>
+																<div class="address">{formatted_address}</div>
+																{rating:this.getRating}
+																<div class="actions">
+																				<div class="website">
+																								<a href="{website}" target="_blank">
+																												<div class="icon"></div>
+																												<div class="text">Website</div>
+																								</a>
+																				</div>
+																				<div class="phone">
+																								<a href="tel:{phone}">
+																												<div class="icon"></div>
+																												<div class="text">Call</div>
+																								</a>
+																				</div>
+																				<div class="profile">
+																								<a href="{url}" target="_blank">
+																												<div class="icon"></div>
+																												<div class="text">Profile</div>
+																								</a>
+																				</div>
+																</div>
+												</div>
+												
+												<div class="block map">
+																
+												</div>
+								</script>
+
 
 								<!-- Place Details Review Page -->
 								<script type="text/template" id="tpl_place_details_reviews">
@@ -93,9 +127,9 @@
 																</tpl>
 												</div>		
 								</script>
-								
-								
-										<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+
+								<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 								<script type="text/javascript">
 												var script = '<script type="text/javascript" src="http://google-maps-' +
 																'utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble';
