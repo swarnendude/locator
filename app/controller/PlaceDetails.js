@@ -86,12 +86,17 @@ Ext.define('Locator.controller.PlaceDetails', {
 																icon : image
 												});
 												
-												me.singleLocationMap.panTo(latLng);
+//												me.singleLocationMap.panTo(latLng);
 												me.singleLocationMap.setCenter(latLng);
 								};
 								
+								if(me.singleMap){
+													me.singleMap.destroy();
+								}
+								
 //								if(!this.getSingleLocationMap()){
-												Ext.create('Ext.Map', {
+											
+											me.singleMap = Ext.create('Ext.Map', {
 																renderTo : 	me.getPlaceDetailsInfo().element.down('.map'),
 																height : 140,
 																mapOptions : {

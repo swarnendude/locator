@@ -433,10 +433,6 @@ body,
 				margin: 15px;
 }
 
-.details-info .block > div{
-				margin: 10px;
-}
-
 .details-info .block .name{
 				font-size: 14px;
 				font-weight: bold;
@@ -446,6 +442,10 @@ body,
 
 .details-info .block .address{
 				color: #444;
+}
+
+.details-info .block .container{
+				padding: 10px;
 }
 
 .details-info .block .actions{

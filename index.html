@@ -72,9 +72,11 @@
 								<!-- Place Details Info Page -->
 								<script type="text/template" id="tpl_place_details_info">
 												<div class="block content">
-																<div class="name">{name}</div>
-																<div class="address">{formatted_address}</div>
-																{rating:this.getRating}
+																<div class="container">
+																				<div class="name">{name}</div>
+																				<div class="address">{formatted_address}</div>
+																				{rating:this.getRating}
+																</div>
 																<div class="actions">
 																				<div class="website">
 																								<a href="{website}" target="_blank">
@@ -96,9 +98,9 @@
 																				</div>
 																</div>
 												</div>
-												
+
 												<div class="block map">
-																
+
 												</div>
 								</script>
 
@@ -107,7 +109,7 @@
 								<script type="text/template" id="tpl_place_details_reviews">
 												<div class="details-item body">
 																<tpl if="this.isEmpty(values)">
-																				<div class="empty-text"> Lang.placeDetails.emptyReview </div>
+																				<div class="empty-text"> No review available for this place. </div>
 																</tpl>
 																<tpl for="reviews">
 																				<div class="review">
